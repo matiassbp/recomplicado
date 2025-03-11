@@ -41,8 +41,9 @@ yarn dev
 
 Abrir el navegador en la dirección indicada (generalmente http://localhost:5173)
 ```bash
-Estructura del proyecto
-Copysrc/
+## Estructura del proyecto
+```bash
+src/
 ├── assets/             # Recursos estáticos (imágenes, fonts, etc.)
 ├── components/         # Componentes reutilizables
 │   ├── DataTable/      # Componente de tabla principal
@@ -57,5 +58,5 @@ Copysrc/
 ├── utils/              # Funciones de utilidad
 ├── App.jsx             # Componente principal
 └── main.jsx            # Punto de entrada
-```bash
+```
 
