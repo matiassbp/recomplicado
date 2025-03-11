@@ -1,12 +1,61 @@
-# React + Vite
+# Visualizador de Datos Empresariales
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
+Este proyecto es una aplicación web desarrollada con React y Vite que permite visualizar, filtrar y exportar datos empresariales a partir de un conjunto de datos simulado. La aplicación muestra información sobre empresas, áreas, trabajadores y sus respectivos sueldos en una interfaz amigable y responsiva.
 
-Currently, two official plugins are available:
+## Características
+- **Visualización de datos en formato de tabla**
+- **Filtros dinámicos** para facilitar la búsqueda de información
+- **Paginación** para mejorar la experiencia de usuario
+- **Exportación a Excel** de los datos visualizados
+- **Dashboard de KPIs** con información estadística relevante
+- **Diseño responsivo** adaptable a múltiples dispositivos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologías utilizadas
+- React 18
+- Vite
+- JavaScript
+- CSS (metodología BEM)
+- [Nombre de la librería para UI, si utilizaste alguna]
+- [Otras librerías o herramientas relevantes]
 
-## Expanding the ESLint configuration
+## Requisitos previos
+- Node.js (versión 14.0 o superior)
+- npm o yarn
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Instalación
+
+1. Clonar el repositorio:
+```bash
+git clone https://github.com/matiassbp/recomplicado.git
+cd prueba
+
+npm install
+# o
+yarn install
+
+npm run dev
+# o
+yarn dev
+```
+
+Abrir el navegador en la dirección indicada (generalmente http://localhost:5173)
+```bash
+Estructura del proyecto
+Copysrc/
+├── assets/             # Recursos estáticos (imágenes, fonts, etc.)
+├── components/         # Componentes reutilizables
+│   ├── DataTable/      # Componente de tabla principal
+│   ├── Filters/        # Componentes de filtrado
+│   ├── Pagination/     # Componente de paginación
+│   └── KPIDashboard/   # Componentes para visualización de KPIs
+├── data/               # Archivos de datos
+│   ├── origen-datos-junior.xlsx
+│   └── diccionario-de-datos.json
+├── hooks/              # Custom hooks
+├── services/           # Servicios para manejo de datos
+├── utils/              # Funciones de utilidad
+├── App.jsx             # Componente principal
+└── main.jsx            # Punto de entrada
+```bash
+
